@@ -1,5 +1,5 @@
-function checkForName(inputText){
-    console.log("::: Running checkForLang:::", inputText);
+const checkForName = (inputText) => {
+    console.log("::: Running checkForInput:::", inputText);
     
     let isURL = validURL(inputText)
 
@@ -7,8 +7,8 @@ function checkForName(inputText){
     return isURL;
 }
 
-function validURL(str) {
-  var pattern = new RegExp('^(https?:\\/\\/)?'+ // protocol
+  const validURL = (str) => {
+      let pattern = new RegExp('^(https?:\\/\\/)?'+ // protocol
     '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // domain name
     '((\\d{1,3}\\.){3}\\d{1,3}))'+ // OR ip (v4) address
     '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*'+ // port and path
@@ -18,7 +18,13 @@ function validURL(str) {
 
 }
 
-  export { checkForName}
+  export { checkForName }
+
+  
+  
+  
+  
+
 
 // function checkForName(inputText) {
 //     console.log("::: Running checkForName :::", inputText);
