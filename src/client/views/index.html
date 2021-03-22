@@ -13,11 +13,17 @@
     <body>
 
         <header>
-            <div class="">
-                Logo
+            <div class="logo">
+                 <img src="https://www.kdnuggets.com/wp-content/uploads/videolectures-most-popular-text-mining-words.jpg"  alt="Logo" width="50" height="60">
             </div>
-            <div class="">
-                navigation
+            <div nav class="navbar__menu">
+                <ul id="navbar__list"> 
+                    <li> <a href= '#home' >Home</a></li> 
+                    <li class ="nav__active" > <a href= '#content' >Content</a></li> 
+                    <li> <a href= '#help' >Help</a></li> 
+                </ul>
+                </nav>
+                <!-- navigation -->
             </div>
         </header>
 
@@ -36,16 +42,22 @@
         </main>
 
         <footer>
-            <p>This is a footer</p>
+            <p>Semantics Analytics</p>
         </footer>
-        <!-- <script>
-            // Check that service workers are supported
-            if ('serviceWorker' in navigator) {
-              // Use the window load event to keep the page load performant
-              window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/service-worker.js');
-              });
-            }
-            </script> -->
+       
+
+            
     </body>
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+          // Use the window load event to keep the page load performant
+          window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/service-worker.js');
+          });
+        }
+
+        
+    </script>
+
 </html>

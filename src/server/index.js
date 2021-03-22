@@ -50,7 +50,9 @@ app.post('/sentiment', function (req, res) {
     .then(response => response.json())
     .then(function(data) {
         console.log(data.score_tag)
+        console.log(data)
         let sentiment= data.score_tag
+        
 
         res.send(JSON.stringify({data:sentiment}))
         })

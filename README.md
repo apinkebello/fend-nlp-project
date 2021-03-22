@@ -1,29 +1,26 @@
-# Webbpack Express Example App
+# Description
+Using MeaningCloud API to Analyse contents of a URL
 
-The goal of this repo is be an example of a basic but functional app built on Express and Webpack.
+Languages: HTML, CSS and JavaScript
 
-If you want to follow along, start from branch 0-initial-setup. Each branch in this project is a step along the path to creating a fully functional webpack setup. In each branch, there will be a documentation file that lists out the steps taken in that branch (each step is also roughly a git commit if you look at the history) which you can use as a checklist when setting up your own projects. 
+# Prerequisite
+Dependencies
 
-## What we will cover
+"body-parser": "^1.19.0",
+"cors": "^2.8.5",
+"dotenv": "^8.2.0",
+"express": "^4.17.1",
+"meaning-cloud": "^1.1.10",
+"node-fetch": "^2.6.1",
+"webpack": "^4.35.3",
+"webpack-cli": "^3.3.5"
 
-We will cover:
+# Installation
+JS Version ES2016/ES6
 
-- Webpack entry point
-- Webpack output and dist folder
-- Webpack Loaders
-- Webpack Plugins
-- Webpack Mode
-- Tools for convenient Webpack development
+# Runtime Environment
+JS Standard: ESlint  
 
-## Get Up and Running
+Any modern browser
 
-Fork this repo, then clone the branch of your choice from your forked repo down to your computer:
 
-```
-git clone -- git@github.com:[your-user-name]/webpack-express.git --
-```
-
-`cd` into your new folder and run:
-- ```npm install```
-- ```npm start``` to start the app
-- this app runs on localhost:8080, but you can of course edit that in server.js
