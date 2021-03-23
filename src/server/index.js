@@ -50,7 +50,8 @@ app.post('/sentiment', function (req, res) {
     .then(response => response.json())
     .then(function(data) {
         console.log(data.score_tag)
-        console.log(data)
+        console.log(data.subjectivity)
+        let textSubjectivity= data.sujectivity
         let sentiment= data.score_tag
         
 

@@ -3,7 +3,7 @@ const checkForName = (inputText) => {
     
     let isURL = validURL(inputText)
 
-    console.log(isURL)
+    
     return isURL;
 }
 

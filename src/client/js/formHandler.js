@@ -1,8 +1,3 @@
-
-// let baseURL= "https://api.meaningcloud.com/sentiment-2.1?key="
-// const apiKey= 'ab99c8a4a3d483a5663a0e11da737703';
-// // const zip = 77487;
-// const lang = 'en';
 function handleSubmit(event) {
     event.preventDefault()
 
@@ -22,11 +17,13 @@ function handleSubmit(event) {
     
     .then(function(json) {
         console.log(json.data)
-        let textSentiment = json.data
+        let textSubjectivity= json.data.Subjectivity
+        let textSentiment = json.data.score_tag
         let finalSentiment = getResponseText(textSentiment) 
         console.log(finalSentiment)
         
-        document.getElementById('results').innerHTML = 'The  sentiment of this text is  ' +finalSentiment;
+        document.getElementById('results_1').innerHTML = 'The  sentiment of the content of  '+formText  + 'is ' +finalSentiment;
+        document.getElementById('results_2').innerHTML = 'The  content of  '+formText  + 'is  ' +textSubjectivity;
     })
     }
     else{
