@@ -16,14 +16,14 @@ function handleSubmit(event) {
     .then(res => res.json())
     
     .then(function(json) {
-        console.log(json.data)
-        let textSubjectivity= json.data.Subjectivity
-        let textSentiment = json.data.score_tag
+        console.log(json)
+        let textSubjectivity= json.subjectivity
+        let textSentiment = json.sentiment
         let finalSentiment = getResponseText(textSentiment) 
         console.log(finalSentiment)
         
-        document.getElementById('results_1').innerHTML = 'The  sentiment of the content of  '+formText  + 'is ' +finalSentiment;
-        document.getElementById('results_2').innerHTML = 'The  content of  '+formText  + 'is  ' +textSubjectivity;
+        document.getElementById('results_1').innerHTML = 'The  sentiment of the content of ' +formText  + ' is ' +finalSentiment;
+        document.getElementById('results_2').innerHTML = 'The  content of  ' +formText  + ' is  ' +textSubjectivity;
     })
     }
     else{

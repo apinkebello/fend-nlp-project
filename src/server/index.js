@@ -51,11 +51,11 @@ app.post('/sentiment', function (req, res) {
     .then(function(data) {
         console.log(data.score_tag)
         console.log(data.subjectivity)
-        let textSubjectivity= data.sujectivity
+        let textSubjectivity= data.subjectivity
         let sentiment= data.score_tag
         
 
-        res.send(JSON.stringify({data:sentiment}))
+        res.send(JSON.stringify({sentiment:sentiment, subjectivity:textSubjectivity }))
         })
     
 
